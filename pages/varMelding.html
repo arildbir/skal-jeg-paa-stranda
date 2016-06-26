@@ -1,0 +1,22 @@
+<p>
+    <a href="#/">Tilbake til hjem</a>
+</p>
+
+
+Forecast for {{ by }}
+<hr />
+Dager:  <a href="#/varmeldingen/2" ng-class="{'bg-primary':dager === '2'}">2</a> | 
+        <a href="#/varmeldingen/5"ng-class="{'bg-primary':dager === '5'}">5</a> | 
+        <a href="#/varmeldingen/7"ng-class="{'bg-primary':dager === '7'}">7</a>
+<hr />
+
+<div ng-repeat="v in vResultat.list">
+    <div class="row">
+        <div class="col-md-12">
+            <var-rapport var-dag = "v" day-value="konverterTilCelcius(temp)"
+                         night-value="konverterTilCelcius(kveldstidTemperatur)" konverter-til-dato="konverterDato (dt)"  
+                         dato-format="MMMM d, y"></var-rapport>
+        
+        </div>
+    </div>
+</div>

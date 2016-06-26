@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            {{ konverterTilDato ({dt: varDag.dt})  | date: datoFormat  }}
+        </h3>
+    </div>
+    <div class="panel-body">Dagtemperatur {{  dayValue({temp : varDag.temp.day}) }}</div>
+    <div class="panel-body">Kveldstemperatur {{ nightValue({kveldstidTemperatur: varDag.temp.eve})  }}</div>
+    <h3 class="panel-title">
+            {{ konverterTilDato2 ({dt2: varDag.dt})  | date: datoFormat  }}
+        </h3>
+</div>
