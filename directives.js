@@ -9,7 +9,6 @@ hukApp.directive ("varRapport", function() {
             dayValue: "&", //dette er en funksjon, derfor brukes &
             nightValue: "&", //dette er en funksjon, derfor brukes &
             konverterTilDato: "&",
-            konverterTilDato2: "&",
             datoFormat: "@"
         }
     }
